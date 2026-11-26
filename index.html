@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Futur — L'IA et l'évolution des métiers</title>
+    <meta name="description" content="Explorez comment l'intelligence artificielle transforme le monde professionnel : métiers menacés, transformés ou émergents.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/acceuil.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body>
+
+    <!-- =================== HEADER =================== -->
+    <header class="header" id="acceuil">
+        <nav class="navbar" aria-label="Navigation principale">
+
+            <a href="index.html" class="nav-brand" aria-label="AI FUTUR — Accueil">
+                <span class="brand-logo-mark" aria-hidden="true">
+                    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="navBrandGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#2563eb"/>
+                                <stop offset="60%" stop-color="#7c3aed"/>
+                                <stop offset="100%" stop-color="#06b6d4"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="32" height="32" rx="9" fill="url(#navBrandGrad)"/>
+                        <path d="M16 6.5L8.5 22.5H12.5L14.5 18H17.5L19.5 22.5H23.5L16 6.5Z" fill="white" fill-opacity="0.2"/>
+                        <path d="M16 7.5L9.5 21.5H12.8L14.7 17.5H17.3L19.2 21.5H22.5L16 7.5Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+                        <circle cx="16" cy="14" r="2.6" fill="#67e8f9"/>
+                        <line x1="16" y1="11" x2="16" y2="7.5" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="13" y1="14" x2="9.5" y2="14" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="19" y1="14" x2="22.5" y2="14" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="16" y1="17" x2="16" y2="20.5" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="brand-name">AI <span class="brand-gradient">FUTUR</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#acceuil">Accueil</a></li>
+                <li><a href="#apropos">Le projet</a></li>
+                <li><a href="#categories">Les métiers</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+
+            <a href="#categories" class="nav-button">
+                Explorer <span aria-hidden="true">↗</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =================== HERO =================== -->
+        <section class="hero" aria-labelledby="hero-title">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Intelligence Artificielle · Futur du Travail
+                </p>
+
+                <h1 id="hero-title">
+                    Le travail change.<br>
+                    <span class="gradient-text">Et vous ?</span>
+                </h1>
+
+                <p class="hero-description">
+                    L'intelligence artificielle redessine le monde professionnel.
+                    Certains métiers évoluent, d'autres se transforment et
+                    de nouvelles opportunités apparaissent.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#categories" class="button button-primary">
+                        Découvrir les métiers
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="#apropos" class="button button-secondary">
+                        Comprendre le sujet
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    Comprendre les changements pour mieux préparer demain.
+                </p>
+
+            </div>
+
+            <!-- Visuel décoratif -->
+            <div class="hero-visual" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="ai-core">
+                    <div class="ai-core-glow" aria-hidden="true"></div>
+                    <div class="ai-core-badge" aria-hidden="true">
+                        <svg width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="heroCoreGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#2563eb"/>
+                                    <stop offset="60%" stop-color="#7c3aed"/>
+                                    <stop offset="100%" stop-color="#06b6d4"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="32" height="32" rx="9" fill="url(#heroCoreGrad)"/>
+                            <path d="M16 6.5L8.5 22.5H12.5L14.5 18H17.5L19.5 22.5H23.5L16 6.5Z" fill="white" fill-opacity="0.2"/>
+                            <path d="M16 7.5L9.5 21.5H12.8L14.7 17.5H17.3L19.2 21.5H22.5L16 7.5Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+                            <circle cx="16" cy="14" r="2.8" fill="#67e8f9"/>
+                            <line x1="16" y1="11" x2="16" y2="7.5" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                            <line x1="13" y1="14" x2="9.5" y2="14" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                            <line x1="19" y1="14" x2="22.5" y2="14" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                            <line x1="16" y1="17" x2="16" y2="20.5" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <span class="ai-symbol">AI <span class="brand-gradient">FUTUR</span></span>
+                    <span class="core-caption">Intelligence & Métiers</span>
+                </div>
+
+                <span class="floating-tag tag-one">DATA</span>
+                <span class="floating-tag tag-two">HUMAN + AI</span>
+                <span class="floating-tag tag-three">INNOVATION</span>
+            </div>
+
+        </section>
+
+
+        <!-- =================== À PROPOS =================== -->
+        <section class="about" id="apropos">
+            <div class="section-container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">01 — Comprendre</p>
+                    <h2>
+                        L'IA ne change pas seulement
+                        <span class="gradient-text">les outils.</span>
+                    </h2>
+                </div>
+
+                <div>
+                    <div class="about-content">
+                        <p>
+                            L'intelligence artificielle est capable d'analyser des données,
+                            d'automatiser certaines tâches et d'assister les professionnels
+                            dans leur travail. Son impact dépend toutefois des activités
+                            réalisées, des compétences humaines et du contexte.
+                        </p>
+                        <p>
+                            Ce projet explore trois grandes catégories de métiers afin
+                            de mieux comprendre les risques, les évolutions et les
+                            nouvelles possibilités liées à l'IA.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Catégories analysées</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">85M</span>
+                            <span class="stat-label">Emplois impactés d'ici 2025</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">97M</span>
+                            <span class="stat-label">Nouveaux rôles émergents</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================== CATÉGORIES =================== -->
+        <section class="categories section-container" id="categories">
+
+            <div class="section-heading">
+                <p class="eyebrow">02 — Explorer</p>
+                <h2>Trois catégories.<br>
+                    <span class="gradient-text">Un avenir en évolution.</span>
+                </h2>
+                <p class="section-description">
+                    Explorez les métiers concernés par les transformations
+                    liées à l'intelligence artificielle.
+                </p>
+            </div>
+
+            <div class="category-grid">
+
+                <!-- Carte 1 -->
+                <article class="category-card card-threatened">
+                    <div class="card-top">
+                        <span class="card-number">01 / 03</span>
+                        <span class="card-icon" aria-hidden="true">↘</span>
+                    </div>
+
+                    <p class="card-label">Automatisation</p>
+
+                    <h3>Métiers menacés</h3>
+
+                    <p>
+                        Certaines tâches répétitives peuvent être automatisées.
+                        Cela peut réduire certains besoins ou faire évoluer
+                        les responsabilités.
+                    </p>
+
+                    <a href="pages/disparition.html" class="card-link">
+                        Explorer cette catégorie
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+                <!-- Carte 2 -->
+                <article class="category-card card-transformed">
+                    <div class="card-top">
+                        <span class="card-number">02 / 03</span>
+                        <span class="card-icon" aria-hidden="true">⟳</span>
+                    </div>
+
+                    <p class="card-label">Adaptation</p>
+
+                    <h3>Métiers transformés</h3>
+
+                    <p>
+                        L'IA assiste les professionnels et modifie certaines
+                        méthodes de travail, sans supprimer nécessairement
+                        le besoin d'expertise humaine.
+                    </p>
+
+                    <a href="pages/transformation.html" class="card-link">
+                        Explorer cette catégorie
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+                <!-- Carte 3 -->
+                <article class="category-card card-emerging">
+                    <div class="card-top">
+                        <span class="card-number">03 / 03</span>
+                        <span class="card-icon" aria-hidden="true">↗</span>
+                    </div>
+
+                    <p class="card-label">Innovation</p>
+
+                    <h3>Métiers émergents</h3>
+
+                    <p>
+                        Le développement de l'IA crée de nouveaux besoins
+                        autour des données, des modèles, de la sécurité
+                        et de la gouvernance.
+                    </p>
+
+                    <a href="pages/emergence.html" class="card-link">
+                        Explorer cette catégorie
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================== TABLEAU =================== -->
+        <section class="overview section-container" id="synthese">
+
+            <div class="section-heading">
+                <p class="eyebrow">03 — Synthèse</p>
+                <h2>Les métiers en un coup d'œil</h2>
+                <p class="section-description">
+                    Vue d'ensemble des trois catégories étudiées dans ce projet.
+                </p>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>
+                        Synthèse des trois catégories étudiées dans ce projet
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Catégorie</th>
+                            <th scope="col">Évolution observée</th>
+                            <th scope="col">Exemple de métier</th>
+                            <th scope="col">Découvrir</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><strong>Métiers menacés</strong></td>
+                            <td>Automatisation de certaines tâches</td>
+                            <td>Employé de saisie de données</td>
+                            <td>
+                                <a href="pages/disparition.html">
+                                    Consulter →
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Métiers transformés</strong></td>
+                            <td>Assistance et évolution des pratiques</td>
+                            <td>Développeur logiciel</td>
+                            <td>
+                                <a href="pages/transformation.html">
+                                    Consulter →
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Métiers émergents</strong></td>
+                            <td>Nouveaux besoins et spécialisations</td>
+                            <td>Spécialiste en IA</td>
+                            <td>
+                                <a href="pages/emergence.html">
+                                    Consulter →
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+            <p class="table-note">
+                Important : l'exposition à l'IA ne signifie pas automatiquement
+                la disparition d'un métier. Les effets dépendent notamment des
+                tâches et du contexte professionnel.
+            </p>
+
+        </section>
+
+
+        <!-- =================== SOURCES =================== -->
+        <section class="sources section-container" id="sources">
+
+            <div class="section-heading">
+                <p class="eyebrow">04 — Approfondir</p>
+                <h2>Aller plus loin</h2>
+                <p class="section-description">
+                    Quelques références pour étudier les évolutions du marché
+                    du travail et de l'intelligence artificielle.
+                </p>
+            </div>
+
+            <div class="source-list">
+
+                <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+                   target="_blank" rel="noopener noreferrer">
+                    <span>
+                        <strong>World Economic Forum</strong>
+                        <small>Future of Jobs Report 2025</small>
+                    </span>
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"
+                   target="_blank" rel="noopener noreferrer">
+                    <span>
+                        <strong>Organisation internationale du Travail</strong>
+                        <small>IA générative et exposition des métiers</small>
+                    </span>
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <a href="#acceuil" class="footer-brand" aria-label="AI FUTUR — Retour en haut">
+                <span class="brand-logo-mark" aria-hidden="true">
+                    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="footerBrandGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#3b82f6"/>
+                                <stop offset="60%" stop-color="#8b5cf6"/>
+                                <stop offset="100%" stop-color="#38bdf8"/>
+                            </linearGradient>
+                        </defs>
+                        <rect width="32" height="32" rx="9" fill="url(#footerBrandGrad)"/>
+                        <path d="M16 6.5L8.5 22.5H12.5L14.5 18H17.5L19.5 22.5H23.5L16 6.5Z" fill="white" fill-opacity="0.2"/>
+                        <path d="M16 7.5L9.5 21.5H12.8L14.7 17.5H17.3L19.2 21.5H22.5L16 7.5Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+                        <circle cx="16" cy="14" r="2.6" fill="#67e8f9"/>
+                        <line x1="16" y1="11" x2="16" y2="7.5" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="13" y1="14" x2="9.5" y2="14" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="19" y1="14" x2="22.5" y2="14" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="16" y1="17" x2="16" y2="20.5" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="brand-name">AI <span class="brand-gradient">FUTUR</span></span>
+            </a>
+
+            <p>
+                Un projet pédagogique sur l'intelligence artificielle
+                et l'évolution des métiers.
+            </p>
+
+            <a href="#acceuil" class="back-to-top">
+                Retour en haut ↑
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 — Projet étudiant · Tous droits réservés</p>
+            <p>Réalisé avec HTML5 et CSS3</p>
+        </div>
+
+    </footer>
+
+    <script src="js/chatbot.js" defer></script>
+</body>
+
+</html>
